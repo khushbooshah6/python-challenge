@@ -16,7 +16,6 @@ with open (filepath, newline='') as fileopen:
 print("Total Voters: " + str(len(voter)))
 outputpath = os.path.join('.','Output','ElectionData.txt')
 def unique(candidate):
-    #candidatelist123 = []
     for x in candidate:
         if x not in candidatelist123:
             candidatelist123.append(x)
@@ -40,10 +39,10 @@ print(candidatelist123[0] + " : " + str(candidatelist1230Count))
 print(candidatelist123[1] + " : " + str(candidatelist1231Count))
 print(candidatelist123[2] + " : " + str(candidatelist1232Count))
 print(candidatelist123[3] + " : " + str(candidatelist1233Count))
-Percentage1 = (candidatelist1230Count/3521001)*100
-Percentage2 = (candidatelist1231Count/3521001)*100
-Percentage3 = (candidatelist1232Count/3521001)*100
-Percentage4 = (candidatelist1233Count/3521001)*100
+Percentage1 = round((candidatelist1230Count/3521001)*100,2)
+Percentage2 = round((candidatelist1231Count/3521001)*100,2)
+Percentage3 = round((candidatelist1232Count/3521001)*100,2)
+Percentage4 = round((candidatelist1233Count/3521001)*100,2)
 print("Election Results")
 print("-------------------------------")
 print("Total Votes:3521001")
